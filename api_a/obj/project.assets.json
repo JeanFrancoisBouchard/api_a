@@ -12571,11 +12571,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\usager\\Desktop\\api_a\\api_a\\api_a.csproj",
+      "projectUniqueName": "C:\\Users\\usager\\source\\api_a\\api_a\\api_a.csproj",
       "projectName": "api_a",
-      "projectPath": "C:\\Users\\usager\\Desktop\\api_a\\api_a\\api_a.csproj",
+      "projectPath": "C:\\Users\\usager\\source\\api_a\\api_a\\api_a.csproj",
       "packagesPath": "C:\\Users\\usager\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\usager\\Desktop\\api_a\\api_a\\obj\\",
+      "outputPath": "C:\\Users\\usager\\source\\api_a\\api_a\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
