@@ -23,3 +23,17 @@ C:\Users\usager\Desktop\api_a\api_a\obj\Debug\netcoreapp2.1\api_a.RazorTargetAss
 C:\Users\usager\Desktop\api_a\api_a\bin\Debug\netcoreapp2.1\api_a.pdb
 C:\Users\usager\Desktop\api_a\api_a\obj\Debug\netcoreapp2.1\api_a.dll
 C:\Users\usager\Desktop\api_a\api_a\obj\Debug\netcoreapp2.1\api_a.pdb
+C:\Users\usager\source\api_a\api_a\bin\Debug\netcoreapp2.1\api_a.deps.json
+C:\Users\usager\source\api_a\api_a\bin\Debug\netcoreapp2.1\api_a.runtimeconfig.json
+C:\Users\usager\source\api_a\api_a\bin\Debug\netcoreapp2.1\api_a.runtimeconfig.dev.json
+C:\Users\usager\source\api_a\api_a\bin\Debug\netcoreapp2.1\api_a.dll
+C:\Users\usager\source\api_a\api_a\bin\Debug\netcoreapp2.1\api_a.pdb
+C:\Users\usager\source\api_a\api_a\obj\Debug\netcoreapp2.1\api_a.csprojAssemblyReference.cache
+C:\Users\usager\source\api_a\api_a\obj\Debug\netcoreapp2.1\api_a.csproj.CoreCompileInputs.cache
+C:\Users\usager\source\api_a\api_a\obj\Debug\netcoreapp2.1\api_a.RazorAssemblyInfo.cache
+C:\Users\usager\source\api_a\api_a\obj\Debug\netcoreapp2.1\api_a.RazorAssemblyInfo.cs
+C:\Users\usager\source\api_a\api_a\obj\Debug\netcoreapp2.1\api_a.AssemblyInfoInputs.cache
+C:\Users\usager\source\api_a\api_a\obj\Debug\netcoreapp2.1\api_a.AssemblyInfo.cs
+C:\Users\usager\source\api_a\api_a\obj\Debug\netcoreapp2.1\api_a.RazorTargetAssemblyInfo.cache
+C:\Users\usager\source\api_a\api_a\obj\Debug\netcoreapp2.1\api_a.dll
+C:\Users\usager\source\api_a\api_a\obj\Debug\netcoreapp2.1\api_a.pdb
