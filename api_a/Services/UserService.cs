@@ -66,6 +66,7 @@ namespace api_a.Services
                     user.titreLivrePrefere = responseJson["titre"].ToString();
                     //user.auteurLivrePrefere = responseJson["auteur"].ToString();
                     i = 0;
+                    user.auteurLivrePrefere = new string[responseJson["auteur"].Count()];
                     foreach(var item in responseJson["auteur"])
                     {
                         user.auteurLivrePrefere[i] = item.ToString();
@@ -91,6 +92,7 @@ namespace api_a.Services
                     user.nomEmissionPreferee = responseJson["nomEmission"].ToString();
                     //user.genreEmissionPreferee = responseJson["genres"].ToString();
                     i = 0;
+                    user.genreEmissionPreferee = new string[responseJson["genres"].Count()];
                     foreach(var item in responseJson["genres"])
                     {
                         //user.genreEmissionPreferee.Append(item.ToString());
@@ -98,7 +100,8 @@ namespace api_a.Services
                     }
                     //user.jourEmissionPreferee = responseJson["jour"].ToString();
                     i = 0;
-                    foreach(var item in responseJson["jour"])
+                    user.jourEmissionPreferee = new string[responseJson["jour"].Count()];
+                    foreach (var item in responseJson["jour"])
                     {
                         //user.jourEmissionPreferee.Append(item.ToString());
                         user.jourEmissionPreferee[i] = item.ToString();
