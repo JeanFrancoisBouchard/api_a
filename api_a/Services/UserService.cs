@@ -47,7 +47,7 @@ namespace api_a.Services
         public string Post(string nom, string isbnLivrePrefere, string nomEmissionPreferee)
         {
             User user = new User { nom = nom };
-
+            int i;
             // Appel de l'api C
 
             var request = new RestRequest("{isbn}", Method.GET);
@@ -65,9 +65,10 @@ namespace api_a.Services
                     user.isbnLivrePrefere = responseJson["isbn"].ToString();
                     user.titreLivrePrefere = responseJson["titre"].ToString();
                     //user.auteurLivrePrefere = responseJson["auteur"].ToString();
+                    i = 0;
                     foreach(var item in responseJson["auteur"])
                     {
-                        user.auteurLivrePrefere.Append(item.ToString());
+                        user.auteurLivrePrefere[i] = item.ToString();
                     }
                     user.urlCouvertureLivrePrefere = responseJson["urlImage"].ToString();
                     user.datePublicationLivrePrefere = responseJson["publication"].ToString();
@@ -89,14 +90,18 @@ namespace api_a.Services
                 {
                     user.nomEmissionPreferee = responseJson["nomEmission"].ToString();
                     //user.genreEmissionPreferee = responseJson["genres"].ToString();
+                    i = 0;
                     foreach(var item in responseJson["genres"])
                     {
-                        user.genreEmissionPreferee.Append(item.ToString());
+                        //user.genreEmissionPreferee.Append(item.ToString());
+                        user.genreEmissionPreferee[i] = item.ToString();
                     }
                     //user.jourEmissionPreferee = responseJson["jour"].ToString();
+                    i = 0;
                     foreach(var item in responseJson["jour"])
                     {
-                        user.jourEmissionPreferee.Append(item.ToString());
+                        //user.jourEmissionPreferee.Append(item.ToString());
+                        user.jourEmissionPreferee[i] = item.ToString();
                     }
                     user.heureEmissionPreferee = responseJson["heure"].ToString();
                 }
