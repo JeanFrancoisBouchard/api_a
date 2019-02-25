@@ -47,8 +47,8 @@ namespace api_a.Services
         public string Post(string nom, string isbnLivrePrefere, string nomEmissionPreferee)
         {
             User user = new User { nom = nom };
-            Emission show;
-            Livre book;
+            Emission show = new Emission();
+            Livre book = new Livre();
 
             // Appel de l'api C
 
@@ -65,7 +65,7 @@ namespace api_a.Services
 
                 if(responseJson.HasValues)
                 {
-                    book = responseJson.ToObject<Livre>();
+                    book = new Livre(responseJson["titre"].ToString(), responseJson["auteur"].ToString(), responseJson["urlImage"].ToString(), responseJson["date"].ToString());
                     user.isbnLivrePreferee = responseJson["isbn"].ToString();
                 }
             }
@@ -83,7 +83,7 @@ namespace api_a.Services
 
                 if(responseJson.HasValues)
                 {
-                    show = responseJson.ToObject<Emission>();
+                    show = new Emission(responseJson["heure"].ToString(), responseJson["jour"].ToString(), responseJson["genre"].ToString()); 
                     user.nomEmissionPreferee = responseJson["nomEmission"].ToString();
                 }
             }
@@ -91,6 +91,8 @@ namespace api_a.Services
 
             // Appel de l'api B
             request = new RestRequest(Method.POST);
+            user.detailEmission = show;
+            user.detailLivre = book;
             request.AddJsonBody(user);
 
             resp = RequestSorter(request);

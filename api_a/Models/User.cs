@@ -11,5 +11,7 @@ namespace api_a.Models
         public string nom { get; set; }
         public string isbnLivrePreferee { get; set; }
         public string nomEmissionPreferee { get; set; }
+        public Emission detailEmission { get; set; }
+        public Livre detailLivre { get; set; }
     }
 }
