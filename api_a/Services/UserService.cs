@@ -46,7 +46,7 @@ namespace api_a.Services
 
         public string Post(string nom, string isbnLivrePrefere, string nomEmissionPreferee)
         {
-            User user = new User { nom = nom };
+            User user = new User { username = nom };
             int i;
             // Appel de l'api C
 
@@ -92,7 +92,7 @@ namespace api_a.Services
 
 
             // Appel de l'api B
-            request = new RestRequest(Method.POST);
+            request = new RestRequest(Method.GET);
             request.AddJsonBody(user);
 
             resp = RequestSorter(request);

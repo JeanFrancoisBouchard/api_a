@@ -8,7 +8,7 @@ namespace api_a.Models
     public class User
     {
         public string id { get; set; }
-        public string nom { get; set; }
+        public string username { get; set; }
         public string isbnLivrePrefere { get; set; }
         public string titreLivrePrefere { get; set; }
         public string auteurLivrePrefere { get; set; }
