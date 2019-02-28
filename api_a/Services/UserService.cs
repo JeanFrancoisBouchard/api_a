@@ -92,7 +92,7 @@ namespace api_a.Services
 
 
             // Appel de l'api B
-            request = new RestRequest(Method.GET);
+            request = new RestRequest(Method.POST);
             request.AddJsonBody(user);
 
             resp = RequestSorter(request);
